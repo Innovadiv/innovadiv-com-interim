@@ -30,3 +30,4 @@ node_modules
 # Project files
 innovadiv-com-interim.sublime-project
 innovadiv-com-interim.sublime-workspace
+.vagrant
