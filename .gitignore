@@ -26,3 +26,7 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# Project files
+innovadiv-com-interim.sublime-project
+innovadiv-com-interim.sublime-workspace
