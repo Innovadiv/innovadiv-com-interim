@@ -4,3 +4,8 @@ app:
     - "80:80"
   volumes:
     - ./app:/app
+bower:
+  image: dockerfile/nodejs-bower-grunt
+  volumes_from:
+    - app
+  working_dir: /app
