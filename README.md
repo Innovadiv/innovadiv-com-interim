@@ -17,6 +17,34 @@ A temporary site to host until the real product is launched.
 - Twitter Bootstrap http://getbootstrap.com/
 - AngularJS Bootstrap bridge http://angular-ui.github.io/bootstrap/
 - SCSS http://sass-lang.com/
+- Dependency Managers
+ - NPM (Back-end) https://www.npmjs.com/
+ - Bower (Front-end) http://bower.io/
+
+## Environment Setup
+- Install VirtualBox 4.3+ https://www.virtualbox.org/
+- Install Vagrant 1.7+ https://www.vagrantup.com/
+- run `vagrant up`
+- `vagrant ssh`
+- `cd /vagrant && sudo fig run --rm app npm install && sudo fig run --rm bower bower install --allow-root`
+
+### Starting/Restarting application
+- `vagrant ssh`
+- `cd /vagrant && sudo fig up -d`
+
+### Log Tailing the Application
+- `vagrant ssh`
+- `cd /vagrant && sudo fig up -d && sudo fig logs app`
+
+### Rebuilding Docker Image
+- `vagrant ssh`
+- `cd /vagrant`
+- `sudo fig build app`
+- `sudo fig up -d`
+
+### Updating Dependencies from Node and Bower
+- `vagrant ssh`
+- `cd /vagrant && sudo fig run --rm app npm install && sudo fig run --rm bower bower install --allow-root`
 
 ## Integrations
 - MailChimp Node bridge https://github.com/gomfunkel/node-mailchimp
