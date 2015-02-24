@@ -10,6 +10,7 @@ var users = require('./routes/users');
 
 var sass = require('node-sass-middleware');
 var swig = require('swig');
+var fs = require('fs');
 
 var app = express();
 
@@ -27,6 +28,15 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+// always remove the .css file in development for recompilation
+if (app.get('env') === 'development') {
+	app.use(function (req, res, next) {
+		fs.unlink(__dirname + '/public/css/main.css', function (err) {
+			next();
+		});
+	});
+}
 
 app.use(sass({
 	src: __dirname + '/scss',
