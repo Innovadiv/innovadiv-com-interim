@@ -4,6 +4,8 @@ app:
     - "80:80"
   volumes:
     - ./app:/app
+  environment:
+    - PORT=80
 bower:
   image: dockerfile/nodejs-bower-grunt
   volumes_from:
