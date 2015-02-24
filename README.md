@@ -25,6 +25,9 @@ A temporary site to host until the real product is launched.
 - HTML/CSS/SCSS http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
 - JavaSCript http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
 
+## Deployment
+- A webhook is attached to this repository, any code pushed to `master` automatically builds http://innovadiv.com/ (only valid until end-of-life of this repository).
+
 ## Contributors
 - @mattlo 
 
