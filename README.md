@@ -57,7 +57,7 @@ A temporary site to host until the real product is launched.
 - A webhook is attached to this repository, any code pushed to `master` automatically builds http://innovadiv.com/ (only valid until end-of-life of this repository).
 
 ## Contributors
-- @mattlo 
+- [@mattlo](https://twitter.com/Matt_Lo)
 
 ## License
 View the [LICENSE](https://github.com/innovadiv/innovadiv-com-interim/blob/master/LICENSE) file.
