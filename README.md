@@ -28,21 +28,21 @@ A temporary site to host until the real product is launched.
 - `vagrant ssh`
 - `cd /vagrant && sudo fig run --rm app npm install && sudo fig run --rm bower bower install --allow-root`
 
-### Starting/Restarting application
+#### Starting/Restarting application
 - `vagrant ssh`
 - `cd /vagrant && sudo fig up -d`
 
-### Log Tailing the Application
+#### Log Tailing the Application
 - `vagrant ssh`
 - `cd /vagrant && sudo fig up -d && sudo fig logs app`
 
-### Rebuilding Docker Image
+#### Rebuilding Docker Image
 - `vagrant ssh`
 - `cd /vagrant`
 - `sudo fig build app`
 - `sudo fig up -d`
 
-### Updating Dependencies from Node and Bower
+#### Updating Dependencies from Node and Bower
 - `vagrant ssh`
 - `cd /vagrant && sudo fig run --rm app npm install && sudo fig run --rm bower bower install --allow-root`
 
