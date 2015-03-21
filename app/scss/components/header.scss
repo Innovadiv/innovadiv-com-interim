@@ -1,5 +1,5 @@
 .header {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.5);
     border-bottom: solid $header-border-height $brand-primary;
 
     .navbar-brand {
@@ -27,6 +27,17 @@
     .navbar-nav a,
     .icon-bar {
         transition: all ease-in-out 0.1s;
+    }
+
+    .navbar-nav {
+        li {
+            margin-right: 1px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        a {
+            cursor: pointer;
+        }
     }
 
     @media (min-width: $screen-sm) {

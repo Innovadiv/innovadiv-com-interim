@@ -1,3 +1,9 @@
 .container-body {
     //padding-top: $navbar-height + $header-border-height;
 }
+
+html,
+body,
+.container-body {
+    height: 100%;
+}
