@@ -1,0 +1,30 @@
+.header {
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: solid 4px $brand-primary;
+
+    .navbar-brand {
+        font-family: "Titillium Web";
+        text-transform: uppercase;
+        background: $brand-primary;
+        font-size: 30px;
+        margin-right: 20px;
+        position: relative;
+
+        span {
+            display: block;
+            font-size: 12px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .navbar-nav a {
+        transition: all ease-in-out 0.1s;
+    }
+
+    @media (min-width: $screen-sm) {
+        .navbar-nav {
+            float: right;
+        }
+    }
+}
