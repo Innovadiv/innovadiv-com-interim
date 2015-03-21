@@ -1,6 +1,6 @@
 .header {
     background: rgba(0, 0, 0, 0.9);
-    border-bottom: solid 4px $brand-primary;
+    border-bottom: solid $header-border-height $brand-primary;
 
     .navbar-brand {
         font-family: "Titillium Web";
@@ -18,7 +18,14 @@
         }
     }
 
-    .navbar-nav a {
+    .navbar-toggle:hover {
+        .icon-bar {
+            background: $brand-primary;
+        }
+    }
+
+    .navbar-nav a,
+    .icon-bar {
         transition: all ease-in-out 0.1s;
     }
 

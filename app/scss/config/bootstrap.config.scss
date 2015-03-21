@@ -3,6 +3,7 @@ $bootstrap-sass-asset-helper: false !default;
 // Variables
 // --------------------------------------------------
 
+$header-border-height: 4px;
 
 //== Colors
 //
@@ -383,9 +384,9 @@ $navbar-default-brand-hover-color:         #fff !default;
 $navbar-default-brand-hover-bg:            $brand-primary !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd !default;
-$navbar-default-toggle-icon-bar-bg:        #888 !default;
-$navbar-default-toggle-border-color:       #ddd !default;
+$navbar-default-toggle-hover-bg:           transparent !default;
+$navbar-default-toggle-icon-bar-bg:        #fff !default;
+$navbar-default-toggle-border-color:       transparent !default;
 
 
 // Inverted navbar
