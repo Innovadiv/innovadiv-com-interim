@@ -32,3 +32,4 @@ innovadiv-com-interim.sublime-project
 innovadiv-com-interim.sublime-workspace
 .vagrant
 app/public/css
+app/public/bower_components
