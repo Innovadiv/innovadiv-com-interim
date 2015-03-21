@@ -2,4 +2,43 @@
     background: url("/images/hero.jpg") no-repeat right center;
     background-size: cover;
     height: 100%;
+    position: relative;
+    padding-top: $navbar-height + $header-border-height;
+    min-height: 300px;
+
+    .container {
+        height: 100%;
+    }
+
+    @media (max-width: $screen-sm) {
+        height: auto;
+    }
+}
+
+.hero-contents {
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: $screen-sm) {
+        h1 {
+            font-size: floor(($font-size-base * 4));
+        }
+    }
+    @media (max-width: $screen-xs) {
+        h1 {
+            font-size: floor(($font-size-base * 3));
+        }
+    }
 }

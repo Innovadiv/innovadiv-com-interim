@@ -1,0 +1,11 @@
+.center-xy {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.center-xy-contents {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}

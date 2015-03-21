@@ -1,0 +1,19 @@
+.app-icon {
+    display: inline-block;
+
+    &:after {
+        $size: 80px;
+
+        content: "IV";
+        font-size: 40px;
+        font-family: "Titillium Web";
+        text-align: center;
+        width: $size;
+        height: $size;
+        line-height: $size;
+        background: #fff;
+        color: $brand-primary;
+        display: inline-block;
+        border-radius: 5px;
+    }
+}
