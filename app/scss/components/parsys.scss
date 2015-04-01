@@ -1,0 +1,35 @@
+.parsys {
+    $padding: 80px;
+
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+.parsys-darken {
+    border-width: 5px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+}
+
+.parsys-red {
+    background: $brand-primary;
+
+    &,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #fff;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &.parsys-darken {
+        border-color: darken($brand-primary, 15%);
+    }
+}
