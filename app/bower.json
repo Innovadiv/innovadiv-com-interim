@@ -13,6 +13,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "~3.3.4"
+    "bootstrap-sass": "~3.3.4",
+    "angular-mailchimp": "*"
   }
 }

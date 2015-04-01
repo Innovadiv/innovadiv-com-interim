@@ -1,4 +1,6 @@
-var app = angular.module('innovadiv-marketing', []);
+var app = angular.module('innovadiv-marketing', [
+    'mailchimp'
+]);
 
 app.controller("featureArtists", function ($scope) {
     $scope.artists = [
