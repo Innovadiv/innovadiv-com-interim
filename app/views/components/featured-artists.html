@@ -1,5 +1,52 @@
-<section class="featured-artists container">
-    <h2>
-        Featured Artist
-    </h2>
+<section class="features parsys parsys-dark parsys-darken">
+
+    <div class="container">
+        <h2 class="text-center">
+            <span class="underline">
+                Featured Artists
+            </span>
+
+            <i class="fa fa-users"></i>
+        </h2>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    Accumsan bibendum neque. Aenean porttitor elit ut lacus molestie, vitae molestie risus pellentesque. Sed semper eu justo quis eleifend.
+                </p>
+                <p>
+                    Duis faucibus augue risus, in gravida lacus tempus ac. In purus nisl, egestas in quam sed, accumsan bibendum neque. Aenean porttitor elit ut lacus molestie, vitae molestie risus pellentesque. Sed semper eu justo quis eleifend. Phasellus sollicitudin id tellus nec accumsan.
+                </p>
+                <p>
+                    Become an Innovadiv Featured Artists by email <a href="info@innovadiv.com">info@innovadiv.com</a>.
+                </p>
+            </div>
+        </div>
+
+        {% raw %}
+        <div class="featured-artists"
+             ng-controller="featureArtists">
+            <div class="featured-artist"
+                 ng-repeat="artist in artists">
+
+                <div class="bio">
+                    <div class="contents">
+                        {{ artist.name }}
+                        <div class="details">
+                            {{ artist.location }} <br />
+                            {{ artist.genre }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-icon app-icon-badge"></div>
+
+                <div class="image-container">
+                    <img ng-src="/images/artists/{{ artist.image }}" alt="{{ artist.name }}" />
+                </div>
+            </div>
+        </div>
+        {% endraw %}
+    </div>
+
 </section>

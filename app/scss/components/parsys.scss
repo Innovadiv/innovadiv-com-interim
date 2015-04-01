@@ -74,3 +74,30 @@
         border-color: darken($brand-primary, 15%);
     }
 }
+
+.parsys-dark {
+    background: $gray-darker;
+
+    .underline {
+        border-bottom-color: $gray-lighter;
+    }
+
+    &,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    h2 i {
+        color: $gray-lighter;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &.parsys-darken {
+        border-color: #000;
+    }
+}
