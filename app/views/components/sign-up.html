@@ -1,5 +1,79 @@
-<section class="sign-up container">
-    <h2>
-        Get Notified
-    </h2>
+<section class="features parsys">
+
+    <div class="container">
+        <h2>
+            <span class="underline">
+                Get Notified
+            </span>
+
+            <i class="fa fa-diamond"></i>
+        </h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <p>
+                    Duis faucibus augue risus, in gravida lacus tempus ac. In purus nisl, egestas in quam sed, accumsan bibendum neque. Aenean porttitor elit ut lacus molestie, vitae molestie risus pellentesque. Sed semper eu justo quis eleifend. Phasellus sollicitudin id tellus nec accumsan.
+                </p>
+                <p>
+                    Accumsan bibendum neque. Aenean porttitor elit ut lacus molestie, vitae molestie risus pellentesque. Sed semper eu justo quis eleifend.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl">
+                    <div ng-show="mailchimp.result === 'error'" ng-cloak>
+                        <p class="alert alert-danger" ng-bind-html="mailchimp.errorMessage"></p>
+                    </div>
+
+                    <div ng-show="mailchimp.result === 'success'" ng-cloak>
+                        <p class="alert alert-success" ng-bind-html="mailchimp.successMessage"></p>
+                    </div>
+
+                    <div ng-hide="mailchimp.result === 'success'">
+                        <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='innovadiv'">
+                        <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us10'">
+                        <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='6bdd35f497a6e6a024d9e11f0'">
+                        <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='14d39fdcbb'">
+
+                        <div class="form-group">
+                            <label for="emailAddress">Email address</label>
+                            <input type="email"
+                                   name="email"
+                                   class="form-control"
+                                   id="emailAddress"
+                                   ng-model="mailchimp.EMAIL"
+                                   placeholder="e.g.: jdoe@greendeere.com"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text"
+                                   class="form-control"
+                                   name="fname"
+                                   id="firstName"
+                                   ng-model="mailchimp.FNAME"
+                                   placeholder="e.g.: John"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text"
+                                   class="form-control"
+                                   name="lname"
+                                   id="lastName"
+                                   ng-model="mailchimp.LNAME"
+                                   placeholder="e.g.: Doe"
+                                   required>
+                        </div>
+                        <button ng-disabled="MailchimpSubscriptionForm.$invalid"
+                                class="btn btn-primary"
+                                ng-click="addSubscription(mailchimp)">Join Mailing List</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
 </section>
