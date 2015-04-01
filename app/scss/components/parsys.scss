@@ -3,6 +3,38 @@
 
     padding-top: $padding;
     padding-bottom: $padding;
+
+    h2 {
+        margin-bottom: 30px;
+
+        .underline {
+            display: inline-block;
+            border-bottom-style: solid;
+            border-bottom-width: 6px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        i {
+            font-size: 46px;
+            opacity: 0.1;
+            display: none;
+        }
+
+        @media (min-width: $screen-sm) {
+            .underline {
+                margin-right: 14px;
+            }
+
+            i {
+                display: inline-block;
+            }
+        }
+    }
+
+    .underline {
+        border-bottom-color: $gray-dark;
+    }
 }
 
 .parsys-darken {
@@ -15,18 +47,27 @@
 .parsys-red {
     background: $brand-primary;
 
+    .underline {
+        border-bottom-color: #fff;
+    }
+
     &,
     h1,
     h2,
     h3,
     h4,
     h5,
-    h6 {
+    h6,
+    h2 i {
         color: #fff;
 
         &:first-child {
             margin-top: 0;
         }
+    }
+
+    h2 i {
+        opacity: 0.5;
     }
 
     &.parsys-darken {

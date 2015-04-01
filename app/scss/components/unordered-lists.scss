@@ -1,0 +1,29 @@
+.checkmarks {
+    list-style: none;
+    padding: 0px;
+
+    li {
+        position: relative;
+        background: $brand-primary;
+        padding: 5px 10px 5px 50px;
+        color: #fff;
+        margin-left: 0;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        border: solid 3px darken($brand-primary, 15%);
+        border-left: none;
+        border-right: none;
+
+        + li {
+            margin-top: 2px;
+        }
+
+        &:before {
+            content: '\f105';
+            font-family: FontAwesome;
+            position: absolute;
+            left: 25px;
+        }
+    }
+}
