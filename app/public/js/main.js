@@ -20,7 +20,7 @@ app.controller("featureArtists", function ($scope) {
             name: "Jake Jude",
             image: "jakejude.jpg",
             location: "Chicago, IL",
-            genre: "Electronic, Progressive House"
+            genre: "Electronic/Progressive House"
         },
         {
             name: "Unamused Dave",
@@ -29,7 +29,7 @@ app.controller("featureArtists", function ($scope) {
             genre: "Rock/Punk/Alternative"
         },
         {
-            name: "Big Looney",
+            name: "Big Loony",
             image: "biglooney.jpg",
             location: "Colorado Springs, CO",
             genre: "Rap"
