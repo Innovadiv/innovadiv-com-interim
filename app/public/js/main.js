@@ -45,6 +45,24 @@ app.controller("featureArtists", function ($scope) {
             image: "martyp.jpg",
             location: "Pensacola, FL",
             genre: "Hip Hop"
+        },
+        {
+            name: "Aaron Andrews Apparel",
+            image: "aaa.jpg",
+            location: "Chicago, IL",
+            genre: "Fashion/Design"
+        },
+        {
+            name: "SMACKA",
+            image: "smacka.jpg",
+            location: "Pensacola, FL",
+            genre: "EDM/Hip Hop"
+        },
+        {
+            name: "Dualstyles ",
+            image: "dualstyles.jpg",
+            location: "Chicago, IL",
+            genre: "Hard Rock"
         }
     ];
 });
