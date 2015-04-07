@@ -55,7 +55,7 @@ app.controller("featureArtists", function ($scope) {
         {
             name: "SMACKA",
             image: "smacka.jpg",
-            location: "Pensacola, FL",
+            location: "Pittsburgh, PA",
             genre: "EDM/Hip Hop"
         },
         {
