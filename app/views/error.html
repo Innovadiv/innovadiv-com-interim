@@ -1,5 +1,29 @@
-{{ message }} <br />
-{{ error.status }}
-<pre>
-{{ error.stack }}
-</pre>
+{% extends 'layout.html' %}
+
+{% block title %}
+Page Not Found - Innovadiv
+{% endblock %}
+
+{% block content %}
+
+<!-- {{ message }} {{ error.stack }} -->
+<section class="about parsys parsys-red" id="about">
+    <div class="container">
+        <br />
+        <h2 class="text-center">
+            <span class="underline">
+                Are you on the wrong page?
+            </span>
+        </h2>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <p>
+                    We couldn't find the page you're looking for.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

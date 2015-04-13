@@ -2,6 +2,10 @@ var app = angular.module('innovadiv-marketing', [
     'mailchimp'
 ]);
 
+app.run(function () {
+    hljs.initHighlightingOnLoad();
+});
+
 app.controller("featureArtists", function ($scope) {
     $scope.artists = [
         {

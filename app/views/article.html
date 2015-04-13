@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{{ title }} - Innovadiv
+{% endblock %}
+
+{% block content %}
+
+<section class="features parsys" id="features">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                {% autoescape false %}
+                    {{ contents }}
+                {% endautoescape %}
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
+
+{% block cssincludes %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+{% endblock %}
+
+{% block jsincludes %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+{% endblock %}

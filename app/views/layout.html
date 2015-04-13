@@ -12,6 +12,8 @@
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:200,900|Open+Sans:400italic,700,400'
           rel='stylesheet' type='text/css'>
     {% endblock %}
+
+    {% block cssincludes %}{% endblock %}
 </head>
 <body data-spy="scroll" data-target="#navbar">
     {% include "./components/header.html" %}
@@ -27,5 +29,7 @@
     <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
     <script src="/bower_components/angular-mailchimp/angular-mailchimp.js"></script>
     <script src="/js/main.js"></script>
+
+    {% block jsincludes %}{% endblock %}
 </body>
 </html>
