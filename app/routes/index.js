@@ -1,6 +1,19 @@
 var express = require('express');
 var router = express.Router();
 var fs = require("q-io/fs");
+var marked = require('marked');
+
+// set marked config
+marked.setOptions({
+    renderer: new marked.Renderer(),
+    gfm: true,
+    tables: true,
+    breaks: false,
+    pedantic: false,
+    sanitize: true,
+    smartLists: true,
+    smartypants: false
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -11,7 +24,7 @@ router.get('/', function(req, res, next) {
 router.get('/articles/:entry', function (req, res, next) {
     // get file name
     var filename = req.params.entry;
-    var path = __dirname + '/../blog-articles/' + filename + '.html';
+    var path = __dirname + '/../blog-articles/' + filename + '.md';
 
     fs.stat(path)
         // check if path exists
@@ -26,7 +39,10 @@ router.get('/articles/:entry', function (req, res, next) {
         })
         // process contents
         .then(function (contents) {
-            res.send(contents);
+            res.render('article', {
+                title: filename.substr(10).replace(/\-/g, ' '),
+                contents: marked(contents)
+            });
         })
         // error handling
         .catch(function (e) {
