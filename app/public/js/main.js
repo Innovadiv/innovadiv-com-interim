@@ -3,7 +3,10 @@ var app = angular.module('innovadiv-marketing', [
 ]);
 
 app.run(function () {
-    hljs.initHighlightingOnLoad();
+    if (typeof hljs !== 'undefined') {
+        // @TODO move this to directive
+        hljs.initHighlightingOnLoad();
+    }
 });
 
 app.controller("featureArtists", function ($scope) {
@@ -59,7 +62,7 @@ app.controller("featureArtists", function ($scope) {
         {
             name: "SMACKA",
             image: "smacka.jpg",
-            location: "Pittsburgh, PA",
+            location: "Pensacola, FL",
             genre: "EDM/Hip Hop"
         },
         {
