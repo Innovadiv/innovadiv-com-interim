@@ -14,6 +14,16 @@
     {% endblock %}
 
     {% block cssincludes %}{% endblock %}
+
+    <meta property="og:title" content="Marketing, Distribution, Merchandise for Musicians" />
+    <meta property="og:site_name" content="Innovadiv"/>
+    <meta property="og:url" content="{{ currentPath }}" />
+    <meta property="og:description" content="The primary focus of Innovadiv is to create a network of musicians that are able to connect with vital resources such as other artists, management, marketing, merchandising, products, recording and touring. Innovadiv provides the perfect resources for a range of artists, whether they are just now beginning their journey to those whom are already established." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="{{ host }}/images/fb-logo.jpg" />
+
+
 </head>
 <body data-spy="scroll" data-target="#navbar">
     {% include "./components/header.html" %}
