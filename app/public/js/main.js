@@ -79,19 +79,19 @@ app.controller("featureArtists", function ($scope) {
         },
         {
             name: "dAb Images",
-            image: "dab.jpg",
+            image: "daab.jpg",
             location: "Peoria, IL",
             genre: "Event Photography/Private Shoots"
         },
         {
             name: "Devin Young",
-            image: "devin-young.jpg",
+            image: "devin-youngg.jpg",
             location: "Chicago, IL",
             genre: "R&B/Video Production/Songwriter"
         },
         {
             name: "Over Your Head Productions",
-            image: "oyhp.jpg",
+            image: "oyhpp.jpg",
             location: "Chicago, IL",
             genre: "Photography/Video Editing/Filming"
         }        
