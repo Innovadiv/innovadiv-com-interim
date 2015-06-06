@@ -6,10 +6,20 @@
 
 {% block content %}
 
-{% include "components/hero.html" %}
-{% include "components/about.html" %}
-{% include "components/features.html" %}
-{% include "components/featured-artists.html" %}
-{% include "components/sign-up.html" %}
+<section class="hero">
+    {% include "components/hero.html" %}
+</section>
+<section class="about parsys parsys-red parsys-darken" id="about">
+    {% include "components/about.html" %}
+</section>
+<section class="features parsys" id="features">
+    {% include "components/features.html" %}
+</section>
+<section class="features parsys parsys-dark parsys-darken" id="innovadiv-featured-artists">
+    {% include "components/featured-artists.html" %}
+</section>
+<section class="features parsys" id="get-notified">
+    {% include "components/sign-up.html" %}
+</section>
 
 {% endblock %}
