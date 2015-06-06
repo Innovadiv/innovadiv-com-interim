@@ -1,49 +1,47 @@
-<section class="features parsys parsys-dark parsys-darken" id="innovadiv-featured-artists">
 
-    <div class="container">
-        <h2 class="text-center">
-            <span class="underline">
-                Featured Artists
-            </span>
 
-            <i class="fa fa-users"></i>
-        </h2>
+<div class="container">
+    <h2 class="text-center">
+        <span class="underline">
+            Featured Artists
+        </span>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <p>
-                    We provide essentials for artists to reach new heights in an industry they love! Innovadiv's Featured Artists embody the creativity, talent, and drive to succeed.
-                </p>
-                <p>
-                    Become an Innovadiv Featured Artist: <a href="mailto:info@innovadiv.com">info@innovadiv.com</a>
-                </p>
-            </div>
+        <i class="fa fa-users"></i>
+    </h2>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <p>
+                We provide essentials for artists to reach new heights in an industry they love! Innovadiv's Featured Artists embody the creativity, talent, and drive to succeed.
+            </p>
+            <p>
+                Become an Innovadiv Featured Artist: <a href="mailto:info@innovadiv.com">info@innovadiv.com</a>
+            </p>
         </div>
-
-        {% raw %}
-        <div class="featured-artists"
-             ng-controller="featureArtists">
-            <div class="featured-artist"
-                 ng-repeat="artist in artists">
-
-                <div class="bio">
-                    <div class="contents">
-                        {{ artist.name }}
-                        <div class="details">
-                            {{ artist.location }} <br />
-                            {{ artist.genre }}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="app-icon app-icon-badge"></div>
-
-                <div class="image-container">
-                    <img ng-src="/images/artists/{{ artist.image }}" alt="{{ artist.name }}" />
-                </div>
-            </div>
-        </div>
-        {% endraw %}
     </div>
 
-</section>
+    {% raw %}
+    <div class="featured-artists"
+         ng-controller="featureArtists">
+        <div class="featured-artist"
+             ng-repeat="artist in artists">
+
+            <div class="bio">
+                <div class="contents">
+                    {{ artist.name }}
+                    <div class="details">
+                        {{ artist.location }} <br />
+                        {{ artist.genre }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-icon app-icon-badge"></div>
+
+            <div class="image-container">
+                <img ng-src="/images/artists/{{ artist.image }}" alt="{{ artist.name }}" />
+            </div>
+        </div>
+    </div>
+    {% endraw %}
+</div>
