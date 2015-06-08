@@ -94,6 +94,12 @@ app.controller("featureArtists", function ($scope) {
             image: "oyhpp.jpg",
             location: "Chicago, IL",
             genre: "Photography/Video Editing/Filming"
-        }        
+        },
+        {
+            name: "NoDazeOff",
+            image: "daze.jpg",
+            location: "Memphis, TN",
+            genre: "EDM/Hip Hop/R&B/Rock"
+        }
     ];
 });
