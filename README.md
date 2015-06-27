@@ -50,6 +50,7 @@ A temporary site to host until the real product is launched.
 - `boot2docker start`
 - `eval "$(boot2docker shellinit)"`
 - `docker-compose -f fig-dev.yml up app`
+- `boot2docker ip`, then go to http://IP:9112, replace `IP` with the address boot2docker outputted
 
 ## Integrations
 - MailChimp Node bridge https://github.com/gomfunkel/node-mailchimp
