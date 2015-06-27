@@ -46,6 +46,11 @@ A temporary site to host until the real product is launched.
 - `vagrant ssh`
 - `cd /vagrant && sudo fig run --rm app npm install && sudo fig run --rm bower bower install --allow-root`
 
+## Environment Setup for Victoria
+- `boot2docker start`
+- `eval "$(boot2docker shellinit)"`
+- `docker-compose -f fig-dev.yml up app`
+
 ## Integrations
 - MailChimp Node bridge https://github.com/gomfunkel/node-mailchimp
 
