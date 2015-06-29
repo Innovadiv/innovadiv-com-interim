@@ -100,6 +100,12 @@ app.controller("featureArtists", function ($scope) {
             image: "daze.jpg",
             location: "Memphis, TN",
             genre: "EDM/Hip Hop/R&B/Rock"
+        },
+        {
+            name: "Relly Rell",
+            image: "rellyrell.jpg",
+            location: "Queens, NY/Chicago, IL",
+            genre: "Hip Hop"
         }
     ];
 });
