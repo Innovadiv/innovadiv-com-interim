@@ -32,6 +32,25 @@ router.get('/', function(req, res, next) {
     });
 });
 
+// blog list
+router.get('/articles', function (req, res, next) {
+    res.render('article-list', {
+        title: 'Articles',
+        currentPath: getCurrentRequestPath(req),
+        host: getHost(req),
+        articles: [
+            {
+                title: 'How to Sell your Merchandise',
+                link: '/articles/how-to-sell-your-merchandise'
+            },
+            {
+                title: '7 Website Tips Artists Need to Know',
+                link: '/articles/7-website-tips-artist-needs-to-know'
+            }
+        ]
+    });
+});
+
 // blog
 router.get('/articles/:entry', function (req, res, next) {
     // get file name
@@ -64,6 +83,6 @@ router.get('/articles/:entry', function (req, res, next) {
             e.status = 404;
             next(e);
         });
-})
+});
 
 module.exports = router;

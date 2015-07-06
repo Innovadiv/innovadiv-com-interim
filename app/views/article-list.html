@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{{ title }} - Innovadiv
+{% endblock %}
+
+{% block content %}
+
+<section class="features parsys">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Latest Innovadiv Articles</h2>
+                <p>
+                    Read the latest articles coming from various employees at Innovadiv.
+                </p>
+                {% for article in articles %}
+                    <h3>
+                        <a href="{{ article.link }}">{{ article.title }}</a>
+                        <a href="{{ article.link }}" class="btn btn-primary">Read</a>
+                    </h3>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="features parsys parsys-dark parsys-darken">
+    {% include "components/sign-up.html" %}
+</section>
+
+<section class="about parsys parsys-red">
+    {% include "components/about.html" %}
+</section>
+
+{% endblock %}
