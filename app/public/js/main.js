@@ -106,6 +106,12 @@ app.controller("featureArtists", function ($scope) {
             image: "rellyrell.jpg",
             location: "Queens, NY/Chicago, IL",
             genre: "Hip Hop"
+        },
+        {   
+            name: "Naarai Michele",
+            image: "naarai.png",
+            location: "Los Angeles, CA",
+            genre: "Pop/R&B"
         }
     ];
 });
