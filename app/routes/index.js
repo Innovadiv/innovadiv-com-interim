@@ -40,6 +40,10 @@ router.get('/articles', function (req, res, next) {
         host: getHost(req),
         articles: [
             {
+                title: 'Copyrights, Trademarks, and Patents for the Independent Musician',
+                link: '/articles/copyrights-trademarks-patents-for-musician'
+            },
+            {
                 title: 'How to Sell your Merchandise',
                 link: '/articles/how-to-sell-your-merchandise'
             },
