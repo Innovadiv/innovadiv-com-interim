@@ -36,4 +36,4 @@ Anticipate questions and include them in the description.
 
 ###Sell To The World
 
-Have a global vision and don’t forget about your international fans! You sell your music overseas so why not sell your merchandise and products? Selling globally also increases your fan base and brings more repeat customers. 
+Have a global vision and don’t forget about your international fans! You sell your music overseas so why not sell your merchandise and products? Selling globally also increases your fan base and brings more repeat customers.  
