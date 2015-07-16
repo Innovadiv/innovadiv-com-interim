@@ -112,6 +112,18 @@ app.controller("featureArtists", function ($scope) {
             image: "naarai.png",
             location: "Los Angeles, CA",
             genre: "Pop/R&B"
+        },
+        {
+            name: "Prime",
+            image: "prime.jpg",
+            location: "Chicago, IL",
+            genre: "Hip Hop"
+        },
+        {
+            name: "The Casual Ties",
+            image: "ties.jpg",
+            location: "Chicago, IL",
+            genre:  "Alternative Rock"
         }
     ];
 });
