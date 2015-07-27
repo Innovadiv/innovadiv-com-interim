@@ -124,6 +124,18 @@ app.controller("featureArtists", function ($scope) {
             image: "ties.jpg",
             location: "Chicago, IL",
             genre:  "Alternative Rock"
+        },
+        {
+            name: "Reid the Martian",
+            image: "reid1.jpg",
+            location: "Lawrence, KS",
+            genre: "Hip Hop"
+        },
+        {
+            name: "FLYe Bishop",
+            image: "flye1.jpg",
+            location: "Kansas City, MO",
+            genre: "Hip Hop Fusion"
         }
     ];
 });
