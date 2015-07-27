@@ -127,15 +127,9 @@ app.controller("featureArtists", function ($scope) {
         },
         {
             name: "Reid the Martian",
-            image: "redi1.jpg",
+            image: "reid1.jpg",
             location: "Lawrence, KS",
             genre: "Hip Hop"
-        },
-        {
-            name: "KC-B",
-            image: "kc1.jpg",
-            location: "Kansas City, MO",
-            genre: "Alternative, Hip Hop"
         },
         {
             name: "FLYe Bishop",
